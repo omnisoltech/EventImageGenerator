@@ -66,7 +66,7 @@ function VolunteerCard({ fullName, role, avatar }: { fullName: string; role: str
         {/* Left Side Content */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-              src={`http://${host}/images/sidebar.png`}
+              src={`https://${host}/images/sidebar.png`}
               alt="profile"
               width={"750px"}
               height={"620px"}
