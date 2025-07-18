@@ -68,7 +68,7 @@ function VolunteerCard({ fullName, role, avatar }: { fullName: string; role: str
               <img
               src={`https://${host}/images/sidebar.png`}
               alt="profile"
-              width={"750px"}
+              width={"700px"}
               height={"620px"}
             />
         </div>
@@ -78,7 +78,7 @@ function VolunteerCard({ fullName, role, avatar }: { fullName: string; role: str
           style={{
             display: "flex",
             flexDirection: "column",
-            justifyItems: "center",
+            justifyContent: "center",
             alignItems: "center",
             // paddingLeft: 60,
           }}
@@ -110,7 +110,7 @@ function VolunteerCard({ fullName, role, avatar }: { fullName: string; role: str
           </div>
 
           {/* Name and Role */}
-          <div style={{ textAlign: "center", display:"flex", flexDirection:"column" }}>
+          <div style={{ textAlign: "center", display:"flex", flexDirection:"column",  }}>
             <div
               style={{
                 fontSize: 32,

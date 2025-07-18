@@ -55,7 +55,7 @@ export default function EventImageGenerator() {
     if (!generatedUrl) return
     const a = document.createElement("a")
     a.href = generatedUrl
-    a.download = `${fullName.replace(/\s+/g, "-")}-techconf-2024.png`
+    a.download = `${fullName.replace(/\s+/g, "-")}-blockchain-week.png`
     a.click()
   }
 
@@ -63,12 +63,12 @@ export default function EventImageGenerator() {
     if (!generatedUrl) return
     try {
       const blob = await (await fetch(generatedUrl)).blob()
-      const file = new File([blob], "techconf-2024.png", { type: "image/png" })
+      const file = new File([blob], "blockchain-week.png", { type: "image/png" })
 
       if (navigator.share && navigator.canShare({ files: [file] })) {
         await navigator.share({
-          title: "TechConf 2024",
-          text: "I will be attending TechConf 2024!",
+          title: "Blockchain Week",
+          text: "I will be attending Blockchain Week 2025!",
           files: [file],
         })
       } else {
