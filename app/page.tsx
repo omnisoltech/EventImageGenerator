@@ -68,7 +68,7 @@ export default function EventImageGenerator() {
       if (navigator.share && navigator.canShare({ files: [file] })) {
         await navigator.share({
           title: "Blockchain Week",
-          text: "I will be attending Blockchain Week 2025!",
+          text: "I will be attending Ethiopia Blockchain Week 2025!",
           files: [file],
         })
       } else {
